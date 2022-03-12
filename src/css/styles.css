@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+}
+
+:root {
+  --display-title-color: #2a2a2a;
+  --display-text-color: #afafaf;
+  --blue-text-color: #4da6e7;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: var(--display-title-color);
+}
+
+header {
+  background-color: #fff;
+  align-items: center;
+  vertical-align: middle;
+  padding: 2rem 7rem;
+  box-shadow: 0px 5px 8px rgb(0 0 0 / 3%);
+}
+
+p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: var(--display-text-color);
+}
+
+header .logo {
+  display: inline-block;
+}
+
+header .header-list {
+  float: right;
+  font-weight: 500;
+  display: inline-block;
+}
+
+header .header-list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header .header-list ul li {
+  display: inline-block;
+  margin: 0px 0px 0px 25px;
+}
+
+header .header-list ul li:hover > a {
+  color: var(--blue-text-color);
+}
+
+header .header-list ul li:last-of-type {
+  margin-left: 3rem;
+  padding: 10px 20px;
+  border-radius: 23px;
+  cursor: pointer;
+  border: 1px solid var(--blue-text-color);
+  transition: all 0.5s;
+}
+
+header .header-list ul li:last-of-type > a {
+  letter-spacing: 0.3px;
+  color: var(--blue-text-color);
+}
+
+header .header-list ul li:last-of-type:hover {
+  color: #fff;
+  background-color: var(--blue-text-color);
+}
+
+header .header-list ul li:last-of-type:hover > a {
+  color: #fff;
+}
+
+header .header-list ul li a {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.section-one {
+  padding: 160px 0px 120px 0px;
+}
+
+.section-one::before {
+  content: "";
+  background-image: url("../img/backgrounds/slider-right-dec.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 1159px;
+  height: 797px;
+  z-index: -1;
+}
+
+.section-one .container {
+  font-size: 0;
+  margin: 0 7rem 0 7rem;
+}
+
+.section-one .container::before {
+  content: "";
+  background-image: url("../img/backgrounds/slider-left-dec.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 262px;
+  height: 625px;
+  z-index: -1;
+}
+
+.section-one .container div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.container .text-section-one .wrapper {
+  width: 95%;
+}
+
+.text-section-one .wrapper h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue-text-color);
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.text-section-one .wrapper h1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin: 0 0 20px 0;
+}
+
+.text-section-one .wrapper p {
+  padding-right: 50px;
+}
+
+.text-section-one .wrapper button {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--blue-text-color);
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 23px;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  border: 1px solid var(--blue-text-color);
+  transition: all 0.5s;
+}
+
+.text-section-one .wrapper button:hover {
+  color: #fff;
+  background-color: var(--blue-text-color);
+}
+
+.img-section-one img {
+  width: 95%;
+  float: right;
+}
+
+.section-two {
+  font-size: 0;
+  margin: 0 7rem 0 7rem;
+}
+
+.section-two div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section-two div h6 {
+  margin: 0 0 15px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--blue-text-color);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.section-two div h4 {
+  margin: 0 0 25px;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.section-two div h4 span {
+  color: var(--blue-text-color);
+}
+
+.section-two div p {
+  margin: 30px 0 45px;
+}
+
+.section-two div p span {
+  color: var(--blue-text-color);
+}
+
+.section-two div .line-divider {
+  width: 50px;
+  height: 2px;
+  background-color: var(--blue-text-color);
+}
+
+footer {
+  margin-top: 130px;
+  vertical-align: middle;
+  background-image: url("../img/footer/footer-bg-v3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .container {
+  height: 100%;
+}
+
+footer .container p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0px;
+}
